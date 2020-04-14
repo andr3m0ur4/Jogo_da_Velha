@@ -18,10 +18,6 @@ div#pagina_inicial div.linha {
 	align-items: center;
 }
 
-div#pagina_inicial div.linha div.coluna {
-
-}
-
 div#pagina_inicial div h4 {
 	text-align: center;
 }
@@ -40,8 +36,12 @@ div#pagina_inicial div input {
 /*********************************************************************/
 /************************** PALCO DO JOGO ****************************/
 div#palco_jogo {
+	display: none;
 	margin-top: 50px;
 	text-align: center;
+}
+
+div#palco_jogo > div {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -63,7 +63,11 @@ div#jogo {
 	border-bottom: 1px solid red;
 }
 
-.quadrado {
+.jogada {
 	width: 100px;
 	height: 100px;
+}
+
+div#palco_jogo div img {
+	display: block;
 }

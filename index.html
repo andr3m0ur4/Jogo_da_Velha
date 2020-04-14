@@ -5,6 +5,7 @@
 		<title>Jogo da Velha</title>
 		<link rel="stylesheet" type="text/css" href="./css/estilo.css">
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="./js/jogo.js"></script>
 	</head>
 	<body>
 
@@ -16,61 +17,65 @@
 			<div class="linha">
 				<div class="coluna">
 					<img src="./imagens/jogador_1.png">
-					<input type="text" maxlength="10" size="11" placeholder="Apelido jogador 1">
+					<input id="entrada_apelido_jogador_1" type="text" maxlength="10" size="11" placeholder="Apelido jogador 1">
 				</div>
 				<div class="coluna">
-					<img src="./imagens/iniciar.png">
+					<img id="btn_iniciar_jogo" src="./imagens/iniciar.png">
 				</div>
 				<div class="coluna">
 					<img src="./imagens/jogador_2.png">
-					<input type="text" maxlength="10" size="11" placeholder="Apelido jogador 2">
+					<input id="entrada_apelido_jogador_2" type="text" maxlength="10" size="11" placeholder="Apelido jogador 2">
 				</div>
 			</div>
 		</div>
 
 		<div id="palco_jogo">
 			<div>
-				<img src="./imagens/jogador_1.png">
-			</div>
-
-			<div>
-				<div id="jogo">
-					
-					<div class="borda_direita borda_fundo">
-						<div class="quadrado"></div>
-					</div>
-					<div class="borda_direita borda_fundo">
-						<div class="quadrado"></div>
-					</div>
-					<div class="borda_fundo">
-						<div class="quadrado"></div>
-					</div>
-				
-					<div class="borda_direita borda_fundo">
-						<div class="quadrado"></div>
-					</div>
-					<div class="borda_direita borda_fundo">
-						<div class="quadrado"></div>
-					</div>
-					<div class="borda_fundo">
-						<div class="quadrado"></div>
-					</div>
-				
-					<div class="borda_direita">
-						<div class="quadrado"></div>
-					</div>
-					<div class="borda_direita">
-						<div class="quadrado"></div>
-					</div>
-					<div>
-						<div class="quadrado"></div>
-					</div>
-					
+				<div>
+					<img src="./imagens/jogador_1.png">
+					<span id="nome_jogador_1"></span>
 				</div>
-			</div>
 
-			<div>
-				<img src="./imagens/jogador_2.png">
+				<div>
+					<div id="jogo">
+						
+						<div class="borda_direita borda_fundo">
+							<div class="jogada" id="a-1"></div>
+						</div>
+						<div class="borda_direita borda_fundo">
+							<div class="jogada" id="a-2"></div>
+						</div>
+						<div class="borda_fundo">
+							<div class="jogada" id="a-3"></div>
+						</div>
+					
+						<div class="borda_direita borda_fundo">
+							<div class="jogada" id="b-1"></div>
+						</div>
+						<div class="borda_direita borda_fundo">
+							<div class="jogada" id="b-2"></div>
+						</div>
+						<div class="borda_fundo">
+							<div class="jogada" id="b-3"></div>
+						</div>
+					
+						<div class="borda_direita">
+							<div class="jogada" id="c-1"></div>
+						</div>
+						<div class="borda_direita">
+							<div class="jogada" id="c-2"></div>
+						</div>
+						<div>
+							<div class="jogada" id="c-3"></div>
+						</div>
+						
+					</div>
+				</div>
+
+				<div>
+					<img src="./imagens/jogador_2.png">
+					<span id="nome_jogador_2"></span>
+				</div>
 			</div>
 		</div>
 
