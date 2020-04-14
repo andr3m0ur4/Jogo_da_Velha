@@ -1,0 +1,69 @@
+/*********************************************************************/
+/********************* CONFIGURAÇÕES PADRÕES **************************/
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+}
+
+/*********************************************************************/
+/************************** PÁGINA INiCIAL ***************************/
+div#pagina_inicial {
+	width: 600px;
+	margin: 0 auto;
+}
+
+div#pagina_inicial div.linha {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div#pagina_inicial div.linha div.coluna {
+
+}
+
+div#pagina_inicial div h4 {
+	text-align: center;
+}
+
+div#pagina_inicial div img {
+	display: block;
+}
+
+div#pagina_inicial div input {
+	margin-top: 5px;
+	border: none;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/*********************************************************************/
+/************************** PALCO DO JOGO ****************************/
+div#palco_jogo {
+	margin-top: 50px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+div#jogo {
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.borda_direita {
+	border-right: 1px solid red;
+}
+
+.borda_fundo {
+	border-bottom: 1px solid red;
+}
+
+.quadrado {
+	width: 100px;
+	height: 100px;
+}

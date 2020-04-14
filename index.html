@@ -3,79 +3,73 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Jogo da Velha</title>
+		<link rel="stylesheet" type="text/css" href="./css/estilo.css">
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 
-		<div id="pagina_inicial" align="center">
-			<table width="600">
-				<tbody>
-					<tr>
-						<th colspan="3">JOGO DA VELHA</th>
-					</tr>
-					<tr>
-						<td align="center">
-							<img src="./imagens/jogador_1.png"><br>
-							<input type="text" maxlength="10" placeholder="Apelido jogador 1" style="border: none;">
-						</td>
-						<td align="center">
-							<img src="./imagens/iniciar.png">
-						</td>
-						<td align="center">
-							<img src="./imagens/jogador_2.png"><br>
-							<input type="text" maxlength="10" placeholder="Apelido jogador 2" style="border: none;">
-						</td>
-					</tr>
-				</tbody>
-			</table>
+		<div id="pagina_inicial">
+			<div>
+				<h4>JOGO DA VELHA</h4>
+			</div>
+
+			<div class="linha">
+				<div class="coluna">
+					<img src="./imagens/jogador_1.png">
+					<input type="text" maxlength="10" size="11" placeholder="Apelido jogador 1">
+				</div>
+				<div class="coluna">
+					<img src="./imagens/iniciar.png">
+				</div>
+				<div class="coluna">
+					<img src="./imagens/jogador_2.png">
+					<input type="text" maxlength="10" size="11" placeholder="Apelido jogador 2">
+				</div>
+			</div>
 		</div>
 
-		<div id="palco_jogo" style="margin-top: 50px; text-align: center;">
-			<div style="display: inline-block;">
+		<div id="palco_jogo">
+			<div>
 				<img src="./imagens/jogador_1.png">
 			</div>
 
-			<div style="display: inline-block;">
-				<table>
-					<tr>
-						<td style="border-bottom: 1px solid red;border-right: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-						<td style="border-bottom: 1px solid red;border-right: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-						<td style="border-bottom: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-					</tr>
-
-					<tr>
-						<td style="border-bottom: 1px solid red;border-right: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-						<td style="border-bottom: 1px solid red;border-right: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-						<td style="border-bottom: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-					</tr>
-
-					<tr>
-						<td style="border-right: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-						<td style="border-right: 1px solid red;">
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-						<td>
-							<div style="width: 100px;height: 100px"></div>
-						</td>
-					</tr>
-				</table>
+			<div>
+				<div id="jogo">
+					
+					<div class="borda_direita borda_fundo">
+						<div class="quadrado"></div>
+					</div>
+					<div class="borda_direita borda_fundo">
+						<div class="quadrado"></div>
+					</div>
+					<div class="borda_fundo">
+						<div class="quadrado"></div>
+					</div>
+				
+					<div class="borda_direita borda_fundo">
+						<div class="quadrado"></div>
+					</div>
+					<div class="borda_direita borda_fundo">
+						<div class="quadrado"></div>
+					</div>
+					<div class="borda_fundo">
+						<div class="quadrado"></div>
+					</div>
+				
+					<div class="borda_direita">
+						<div class="quadrado"></div>
+					</div>
+					<div class="borda_direita">
+						<div class="quadrado"></div>
+					</div>
+					<div>
+						<div class="quadrado"></div>
+					</div>
+					
+				</div>
 			</div>
 
-			<div style="display: inline-block;">
+			<div>
 				<img src="./imagens/jogador_2.png">
 			</div>
 		</div>
