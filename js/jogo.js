@@ -39,6 +39,7 @@ $(document).ready(function() {
 	$('.jogada').click(function() {
 
 		var id_campo_clicado = this.id
+		$('#' + id_campo_clicado).off()
 		jogada(id_campo_clicado)
 	})
 
@@ -87,6 +88,8 @@ $(document).ready(function() {
 			pontos += matriz_jogo['c'][i]
 		}
 
+		ganhador(pontos)
+
 		// verificar na vertical
 		pontos = 0
 		for (var i = 1; i <= 3; i++) {
@@ -121,7 +124,7 @@ $(document).ready(function() {
 			var jogador_2 = $('#entrada_apelido_jogador_2').val()
 			alert(`${jogador_2} é o vencedor`)
 			$('.jogada').off()
-			
+
 		}
 	}
 

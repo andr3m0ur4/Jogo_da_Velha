@@ -71,3 +71,8 @@ div#jogo {
 div#palco_jogo div img {
 	display: block;
 }
+
+div#palco_jogo div span {
+	display: block;
+	margin-top: 5px;
+}
