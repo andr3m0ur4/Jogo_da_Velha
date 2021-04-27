@@ -76,3 +76,13 @@ div#palco_jogo div span {
 	display: block;
 	margin-top: 5px;
 }
+
+/*********************************************************************/
+/************************** MODAL ************************************/
+#modal a {
+	color: red;
+    font-weight: 700;
+    transition-duration: .2s;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}

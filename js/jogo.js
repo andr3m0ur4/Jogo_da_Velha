@@ -17,12 +17,14 @@ $(document).ready(function() {
 
 		// valida a digitação dos apelidos dos jogadores
 		if (!($('#entrada_apelido_jogador_1').val())) {
-			alert('Apelido do jogador 1 não foi preenchido!')
+			$('#modal p').html('Apelido do jogador 1 não foi preenchido!')
+			$('#modal').modal()
 			return false
 		}
 
 		if (!($('#entrada_apelido_jogador_2').val())) {
-			alert('Apelido do jogador 2 não foi preenchido!')
+			$('#modal p').html('Apelido do jogador 2 não foi preenchido!')
+			$('#modal').modal()
 			return false
 		}
 		
@@ -116,13 +118,15 @@ $(document).ready(function() {
 		if (pontos === -3) {
 
 			var jogador_1 = $('#entrada_apelido_jogador_1').val()
-			alert(`${jogador_1} é o vencedor`)
+			$('#modal p').html(jogador_1 + ' é o vencedor')
+			$('#modal').modal()
 			$('.jogada').off()
-
+			
 		} else if (pontos === 3) {
-
+			
 			var jogador_2 = $('#entrada_apelido_jogador_2').val()
-			alert(`${jogador_2} é o vencedor`)
+			$('#modal p').html(jogador_2 + ' é o vencedor')
+			$('#modal').modal()
 			$('.jogada').off()
 
 		}
